@@ -3,7 +3,7 @@
 
 Name:		perl-%{modname}
 Version:	1.014
-Release:	%mkrel 2
+Release:	%mkrel 3
 License:	GPL or Artistic
 Group:		Development/Perl
 Summary:	Patricia Trie perl module for fast IP address lookups
