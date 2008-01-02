@@ -10,6 +10,7 @@ Summary:	Patricia Trie perl module for fast IP address lookups
 Source:		http://search.cpan.org/CPAN/modules/by-module/%{modname}/%{modname}-%{version}.tar.bz2
 URL:		http://search.cpan.org/dist/%{modname}
 BuildRequires:	perl-devel
+BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
 Boulder - An API for hierarchical tag/value structures
