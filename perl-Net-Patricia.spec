@@ -3,16 +3,16 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:	Patricia Trie perl module for fast IP address lookups
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/modules/by-module/%{module}/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://search.cpan.org/CPAN/modules/by-module/Net/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This module uses a Patricia Trie data structure to quickly perform IP address
