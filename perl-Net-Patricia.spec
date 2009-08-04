@@ -1,14 +1,16 @@
-%define module	Net-Patricia
-%define moddir	Net/Patricia
+%define upstream_name	 Net-Patricia
+%define upstream_version 1.15
 
-Name:		perl-%{module}
-Version:	1.15
-Release:	%mkrel 1
-License:	GPL or Artistic
-Group:		Development/Perl
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:	Patricia Trie perl module for fast IP address lookups
-URL:		http://search.cpan.org/dist/%{module}
-Source:		http://search.cpan.org/CPAN/modules/by-module/%{module}/%{module}-%{version}.tar.gz
+License:	GPL+ or Artistic
+Group:		Development/Perl
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:	http://search.cpan.org/CPAN/modules/by-module/%{module}/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires:	perl-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
@@ -25,7 +27,7 @@ been employed for routing table lookups within the BSD kernel since the 4.3
 Reno release.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL
@@ -47,9 +49,6 @@ rm -Rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%{perl_vendorarch}/%{moddir}*
-%{perl_vendorarch}/auto/%{moddir}*
+%{perl_vendorarch}/Net*
+%{perl_vendorarch}/auto/Net*
 %{_mandir}/man?/*
-
-
-
