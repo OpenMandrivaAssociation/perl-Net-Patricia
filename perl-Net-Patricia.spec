@@ -11,7 +11,9 @@ Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/modules/by-module/Net/%{upstream_name}-%{upstream_version}.tar.gz
 
+BuildRequires:  perl(Socket6)
 BuildRequires:	perl-devel
+
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
@@ -33,6 +35,9 @@ Reno release.
 %{__perl} Makefile.PL
 %make
 
+%check
+%make test
+
 %install
 rm -Rf %{buildroot}
 %make DESTDIR=%{buildroot} pure_vendor_install \
@@ -40,9 +45,6 @@ INSTALLSITELIB=%perl_vendorlib \
 INSTALLSITEMAN1DIR=%{_mandir}/man1 \
 INSTALLSITEMAN3DIR=%{_mandir}/man3
 find %{buildroot} -type f -name .packlist -exec rm -f {} ';'
-
-%check
-%make test
 
 %clean
 rm -Rf %{buildroot}
