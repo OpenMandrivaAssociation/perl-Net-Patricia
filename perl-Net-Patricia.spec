@@ -13,6 +13,7 @@ Source0:	http://search.cpan.org/CPAN/modules/by-module/Net/%{upstream_name}-%{up
 
 BuildRequires:  perl(Socket6)
 BuildRequires:	perl-devel
+BuildRequires:	perl-Net-CIDR-Lite
 
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
