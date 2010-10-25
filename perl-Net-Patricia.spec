@@ -1,9 +1,9 @@
 %define upstream_name	 Net-Patricia
-%define upstream_version 1.16
+%define upstream_version 1.18
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:	Patricia Trie perl module for fast IP address lookups
 License:	GPL+ or Artistic
