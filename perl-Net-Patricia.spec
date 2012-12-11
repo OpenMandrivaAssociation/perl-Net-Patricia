@@ -55,3 +55,66 @@ rm -Rf %{buildroot}
 %{perl_vendorarch}/Net*
 %{perl_vendorarch}/auto/Net*
 %{_mandir}/man?/*
+
+
+%changelog
+* Wed Jan 25 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 1.190.0-2
++ Revision: 768358
+- svn commit -m mass rebuild of perl extension against perl 5.14.2
+
+* Sat Nov 27 2010 Guillaume Rousse <guillomovitch@mandriva.org> 1.190.0-1mdv2011.0
++ Revision: 601938
+- update to new version 1.19
+
+* Mon Oct 25 2010 Buchan Milne <bgmilne@mandriva.org> 1.180.0-1mdv2011.0
++ Revision: 589297
+- BR perl-Net-CIDR-Lite, required for testing
+- update to new version 1.18
+
+  + Jérôme Quelin <jquelin@mandriva.org>
+    - rebuild for perl 5.12
+
+* Thu Feb 25 2010 Jérôme Quelin <jquelin@mandriva.org> 1.160.0-1mdv2010.1
++ Revision: 511040
+- adding missing buildrequires:
+- update to 1.16
+
+* Tue Aug 04 2009 Jérôme Quelin <jquelin@mandriva.org> 1.150.0-2mdv2010.0
++ Revision: 408970
+- fix url
+- rebuild using %%perl_convert_version
+
+* Tue May 05 2009 Guillaume Rousse <guillomovitch@mandriva.org> 1.15-1mdv2010.0
++ Revision: 372317
+- new version
+
+* Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 1.014-7mdv2009.0
++ Revision: 258058
+- rebuild
+
+* Thu Jul 24 2008 Thierry Vignaud <tv@mandriva.org> 1.014-6mdv2009.0
++ Revision: 246160
+- rebuild
+
+* Tue Jan 15 2008 Thierry Vignaud <tv@mandriva.org> 1.014-4mdv2008.1
++ Revision: 152225
+- rebuild
+
+  + Olivier Blin <blino@mandriva.org>
+    - restore BuildRoot
+
+* Sat Dec 22 2007 Guillaume Rousse <guillomovitch@mandriva.org> 1.014-3mdv2008.1
++ Revision: 137055
+- rebuild
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+
+* Sat Oct 28 2006 Nicolas Lécureuil <neoclust@mandriva.org> 1.014-2mdv2007.0
++ Revision: 73478
+- import perl-Net-Patricia-1.014-2mdv2007.1
+
+* Fri Jul 07 2006 Buchan Milne <bgmilne@obsidian.co.za> 1.014-1mdv2007.0
+- first Mandriva package
+
