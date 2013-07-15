@@ -1,15 +1,15 @@
 %define upstream_name	 Net-Patricia
-%define upstream_version 1.19
+%define upstream_version 1.20
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:	2
+Version:    %perl_convert_version 1.20
+Release:	1
 
 Summary:	Patricia Trie perl module for fast IP address lookups
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/modules/by-module/Net/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://search.cpan.org/CPAN/modules/by-module/Net/Net-Patricia-1.20.tar.gz
 
 BuildRequires:  perl(Socket6)
 BuildRequires:	perl-devel
@@ -117,4 +117,5 @@ rm -Rf %{buildroot}
 
 * Fri Jul 07 2006 Buchan Milne <bgmilne@obsidian.co.za> 1.014-1mdv2007.0
 - first Mandriva package
+
 
