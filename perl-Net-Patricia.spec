@@ -8,7 +8,7 @@ Release:	3
 Summary:	Patricia Trie perl module for fast IP address lookups
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/modules/by-module/Net/Net-Patricia-%{upstream_version}.tar.gz
 
 BuildRequires:  perl(Socket6)
