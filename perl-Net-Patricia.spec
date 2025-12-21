@@ -11,6 +11,7 @@ Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/modules/by-module/Net/Net-Patricia-%{upstream_version}.tar.gz
 
+BuildRequires:	make
 BuildRequires:  perl(Socket6)
 BuildRequires:	perl-devel
 BuildRequires:	perl-Net-CIDR-Lite
