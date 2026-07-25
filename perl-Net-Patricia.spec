@@ -1,15 +1,15 @@
 %define upstream_name	 Net-Patricia
-%define upstream_version 1.22
+%define upstream_version 1.24
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:	3
+Version:    %{upstream_version}
+Release:	1
 
 Summary:	Patricia Trie perl module for fast IP address lookups
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/modules/by-module/Net/Net-Patricia-%{upstream_version}.tar.gz
+Url:		https://github.com/tobez/Net-Patricia
+Source0:	https://cpan.metacpan.org/authors/id/G/GR/GRUBER/Net-Patricia-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:  perl(Socket6)
