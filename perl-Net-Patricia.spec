@@ -1,15 +1,13 @@
 %define upstream_name	 Net-Patricia
-%define upstream_version 1.24
-
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:	1
+Version:    1.24
+Release:	2
 
 Summary:	Patricia Trie perl module for fast IP address lookups
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/tobez/Net-Patricia
-Source0:	https://cpan.metacpan.org/authors/id/G/GR/GRUBER/Net-Patricia-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/G/GR/GRUBER/Net-Patricia-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:  perl(Socket6)
@@ -30,7 +28,7 @@ been employed for routing table lookups within the BSD kernel since the 4.3
 Reno release.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Makefile.PL
@@ -81,9 +79,7 @@ rm -Rf %{buildroot}
 * Tue Aug 04 2009 Jérôme Quelin <jquelin@mandriva.org> 1.150.0-2mdv2010.0
 + Revision: 408970
 - fix url
-- rebuild using %%perl_convert_version
-
-* Tue May 05 2009 Guillaume Rousse <guillomovitch@mandriva.org> 1.15-1mdv2010.0
+- rebuild using %1.24 Tue May 05 2009 Guillaume Rousse <guillomovitch@mandriva.org> 1.15-1mdv2010.0
 + Revision: 372317
 - new version
 
